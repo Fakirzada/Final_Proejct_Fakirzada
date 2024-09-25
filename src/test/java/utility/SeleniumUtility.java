@@ -1,5 +1,6 @@
 package utility;
 
+import base.BaseSetup;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
@@ -8,14 +9,14 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import tekFinalProject.bdd.base.BaseSetup;
+
 
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
-public class SeleniumUtility {
+public class SeleniumUtility extends BaseSetup {
 
     private  static final Logger LOGGER = LogManager.getLogger(SeleniumUtility.class);
     private static WebDriverWait getWait(){
@@ -57,7 +58,7 @@ public class SeleniumUtility {
     }
     public String RandomEmail(){
 
-        return "akomas"+(int)(Math.random()*10000)+"@gmail.com";
+        return "fakirzada"+(int)(Math.random()*10000)+"@gmail.com";
     }
     public String RandomUsername(){
 

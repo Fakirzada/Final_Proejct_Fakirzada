@@ -55,9 +55,9 @@ Feature: Navigate to Home page, User should navigate to Create Account
     When user click on "Create Primary Account" link
     And user enter "randomEmail" in the "Email Address" field
     When user enter "Mathias" in the "First Name" field
-    When user enter "Akowanou" in the "Last Name" field
+    When user enter "Saeed" in the "Last Name" field
     When user enter "employee" in the "Employment Status" field
-    When user enter "11161992" in the "Date Of Birth" field
+    When user enter "10081983" in the "Date Of Birth" field
     When user select "Male" from "Gender" field
     When user select "Mr." from "Title" field
     When user select "Single" from "Marital Status" field
@@ -66,7 +66,7 @@ Feature: Navigate to Home page, User should navigate to Create Account
     When user enter signUp information
     Then user click on "Submit" button
     Then validate user in "Sign in to your Account" page
-    When user enter "RandomUsername" and "Akomas21" to signIn
+    When user enter "RandomUsername" and "Fakirzada21" to signIn
     Then user click on "Sign In" button
     Then validate user in "Primary Account Portal" page
     Then user click on profile icon
