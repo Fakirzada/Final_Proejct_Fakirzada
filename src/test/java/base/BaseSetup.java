@@ -32,7 +32,14 @@ public class BaseSetup {
             throw new RuntimeException("Something is wrong with Config file", ex);
         }
     }
-
+// add enviroment in project
+    private String getEnvConfig() {
+        String configFilePath = System.getProperty("user.dir")
+                + "/src/test/resources/configs/{env}-config.properties";
+        String env = System.getProperty("env");
+        if (env == null) return configFilePath.replace("{env}", "dev");
+        return configFilePath.replace("{env}", env);
+    }
 
 
     public void setupBrowser(){

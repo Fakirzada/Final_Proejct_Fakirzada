@@ -24,7 +24,7 @@ Feature: Navigate to Home page, User should navigate to Create Account
   @Scenario3
   Scenario: Create account with existing email address and validate error message as expected
     When user click on "Create Primary Account" link
-    And user enter "saeed786@gmail.com" in the "Email Address" field
+    And user enter "mohammad@gmail.com" in the "Email Address" field
     When user enter "Saeed" in the "First Name" field
     When user enter "Fakirzada" in the "Last Name" field
     When user enter "employee" in the "Employment Status" field
@@ -33,7 +33,7 @@ Feature: Navigate to Home page, User should navigate to Create Account
     When user select "Mr." from "Title" field
     When user select "Single" from "Marital Status" field
     Then user click on "Create Account" button
-    Then validate error message "Account with email akomas7967@gmail.com is exist" is displayed as expected
+    Then validate error message "Account with email mohammad@gmail.com is exist" is displayed as expected
 
 
   @Scenario4
