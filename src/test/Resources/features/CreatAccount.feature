@@ -11,8 +11,8 @@ Feature: Navigate to Home page, User should navigate to Create Account
   Validate user navigate to page and email address shows as expected.
     When user click on "Create Primary Account" link
     And user enter "randomEmail" in the "Email Address" field
-    When user enter "Mathias" in the "First Name" field
-    When user enter "Akowanou" in the "Last Name" field
+    When user enter "Saeed" in the "First Name" field
+    When user enter "Faqirzada" in the "Last Name" field
     When user enter "employee" in the "Employment Status" field
     When user enter "11161992" in the "Date Of Birth" field
     When user select "Male" from "Gender" field
@@ -24,9 +24,9 @@ Feature: Navigate to Home page, User should navigate to Create Account
   @Scenario3
   Scenario: Create account with existing email address and validate error message as expected
     When user click on "Create Primary Account" link
-    And user enter "akomas7967@gmail.com" in the "Email Address" field
-    When user enter "Mathias" in the "First Name" field
-    When user enter "Akowanou" in the "Last Name" field
+    And user enter "saeed786@gmail.com" in the "Email Address" field
+    When user enter "Saeed" in the "First Name" field
+    When user enter "Fakirzada" in the "Last Name" field
     When user enter "employee" in the "Employment Status" field
     When user enter "11161992" in the "Date Of Birth" field
     When user select "Male" from "Gender" field
@@ -40,8 +40,8 @@ Feature: Navigate to Home page, User should navigate to Create Account
   Scenario: Create Account with Age less that 18 Years Old
     When user click on "Create Primary Account" link
     And user enter "randomEmail" in the "Email Address" field
-    When user enter "Mathias" in the "First Name" field
-    When user enter "Akowanou" in the "Last Name" field
+    When user enter "Saeed" in the "First Name" field
+    When user enter "Faqirzada" in the "Last Name" field
     When user enter "employee" in the "Employment Status" field
     When user enter "10102023" in the "Date Of Birth" field
     When user select "Male" from "Gender" field
@@ -54,8 +54,8 @@ Feature: Navigate to Home page, User should navigate to Create Account
   Scenario: Validate Full Name display at Profile Section by clicking on profile Icon
     When user click on "Create Primary Account" link
     And user enter "randomEmail" in the "Email Address" field
-    When user enter "Mathias" in the "First Name" field
-    When user enter "Saeed" in the "Last Name" field
+    When user enter "Saeed" in the "First Name" field
+    When user enter "Faqirzada" in the "Last Name" field
     When user enter "employee" in the "Employment Status" field
     When user enter "10081983" in the "Date Of Birth" field
     When user select "Male" from "Gender" field
@@ -66,7 +66,7 @@ Feature: Navigate to Home page, User should navigate to Create Account
     When user enter signUp information
     Then user click on "Submit" button
     Then validate user in "Sign in to your Account" page
-    When user enter "RandomUsername" and "Fakirzada21" to signIn
+    When user enter "RandomUsername" and "Faqirzada21" to signIn
     Then user click on "Sign In" button
     Then validate user in "Primary Account Portal" page
     Then user click on profile icon
